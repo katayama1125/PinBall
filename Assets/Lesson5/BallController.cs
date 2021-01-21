@@ -7,11 +7,14 @@ public class BallController : MonoBehaviour
 {
     private float visiblePosZ = -6.5f;
     private GameObject gameoverText;
+    private GameObject scoreText;
+    private int score = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         this.gameoverText = GameObject.Find("GameOverText");
+        this.scoreText = GameObject.Find("ScoreText");
     }
 
     // Update is called once per frame
@@ -28,26 +31,26 @@ public class BallController : MonoBehaviour
         //衝突判定
         if (collision.gameObject.tag == "SmallStarTag")
         {
-            //スコア処理を追加
-            FindObjectOfType<Score>().AddPoint(10);
+            this.score += 10;
+            this.scoreText.GetComponent<Text>().text = this.score + "p";
         }
 
         if (collision.gameObject.tag == "LargeStarTag")
         {
-            //スコア処理を追加
-            FindObjectOfType<Score>().AddPoint(20);
+            this.score += 20;
+            this.scoreText.GetComponent<Text>().text = this.score + "p";
         }
 
         if (collision.gameObject.tag == "SmallCloudTag")
         {
-            //スコア処理を追加
-            FindObjectOfType<Score>().AddPoint(30);
+            this.score += 30;
+            this.scoreText.GetComponent<Text>().text = this.score + "p";
         }
 
         if (collision.gameObject.tag == "LargeCloudTag")
         {
-            //スコア処理を追加
-            FindObjectOfType<Score>().AddPoint(40);
+            this.score += 40;
+            this.scoreText.GetComponent<Text>().text = this.score + "p";
         }
     }
 }

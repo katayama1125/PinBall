@@ -1445,7 +1445,7 @@ GameObject:
   - component: {fileID: 1041228886}
   - component: {fileID: 1041228885}
   m_Layer: 5
-  m_Name: scoreText
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1465,10 +1465,10 @@ RectTransform:
   m_Father: {fileID: 1523130503}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 1300}
-  m_SizeDelta: {x: 1080, y: 200}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -360, y: -130}
+  m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041228885
 MonoBehaviour:
@@ -1491,17 +1491,17 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 160
+    m_FontSize: 90
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 300
+    m_MaxSize: 100
     m_Alignment: 2
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 0
   m_Text: 0
 --- !u!222 &1041228886
 CanvasRenderer:
@@ -1663,7 +1663,6 @@ GameObject:
   - component: {fileID: 1243598449}
   - component: {fileID: 1243598448}
   - component: {fileID: 1243598453}
-  - component: {fileID: 1243598455}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1773,19 +1772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef64927285fd584397f7ab8945077f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1243598455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243598447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e70b114808c18de4abdc1615208ad6f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1041228885}
 --- !u!1001 &1284032833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1977,7 +1963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
@@ -2588,7 +2574,7 @@ PrefabInstance:
     - target: {fileID: 6226167107794427724, guid: 4a1fd6ed64676b14892a21b168e08514,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.84
+      value: -2.17
       objectReference: {fileID: 0}
     - target: {fileID: 6226167107794427724, guid: 4a1fd6ed64676b14892a21b168e08514,
         type: 3}

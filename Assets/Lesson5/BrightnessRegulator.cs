@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BrightnessRegulator : MonoBehaviour
 {
     Material myMaterial;
@@ -15,6 +16,7 @@ public class BrightnessRegulator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         if (tag == "SmallStarTag")
         {
             this.defaultColor = Color.white;
@@ -31,6 +33,7 @@ public class BrightnessRegulator : MonoBehaviour
         this.myMaterial = GetComponent<Renderer>().material;
 
         myMaterial.SetColor("_EmissionColor", this.defaultColor * minEmission);
+
     }
 
     // Update is called once per frame
@@ -50,4 +53,5 @@ public class BrightnessRegulator : MonoBehaviour
     {
         this.degree = 180;
     }
+
 }
